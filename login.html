@@ -1,0 +1,61 @@
+<head>
+  
+  <style>
+    form h3{
+   color: white;
+   margin-left:590px;
+  }
+    body {
+   background-color: plum;
+   max-width: 2200px;
+   width: 100%;
+   padding: 20px;
+    }
+    form input[type=text],
+  form input[type=passwor]{
+    width:50%;
+    height:35px;
+    border:1px solid white;
+    padding-left: 5px;
+     
+    margin-left:290px;
+    margin-top: 2px;
+  }
+  form input[type=button] {
+    width:12%;
+    height:25px;
+    cursor:pointer;
+    background:Gainsboro;
+    color: white;
+    border:0;
+    border-radius:20px;
+    margin-left: 800px;
+    margin-top: 5px;
+  }
+  </style>
+  <script>
+    var nome= 'Vitoria';
+    var num= '1234';
+
+    function confirmarCadastro() {
+     login= document.cd.login.value
+     senha= document.cd.senha.value
+
+     if ((nome==login) && (num==senha)) {
+       alert ("Seja bem vindo")
+       
+       else
+        alert ("Login ou senha incorretos")
+
+     }
+    }
+  </script>
+</head>
+<body>
+  <form>
+      <h3>Login</h3> 
+ <input type="text" name="email" placeholder="Seu e-mail..." size="20"><br>
+<input type="passwor" name="senha" placeholder="Senha..." size="20"><br>
+<input type="button" value="entrar" onClick="confirmarCadastro()">
+  </form>
+</body>
